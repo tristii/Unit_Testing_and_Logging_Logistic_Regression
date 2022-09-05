@@ -30,6 +30,7 @@ mittels Plots aus der Seaborn Library können die Daten visualisiert werden, um 
 * Pairplot mit "Clicked on Ad" als Hue
 
 **4. Decorators**
+
 In diesem Tutorial werden Input-Output-Unit-Tests, eine Logger-Klasse und eine für die Bereitstellung geeignete API erstellt.
 Unser Logger ist ein Dekorator, also eine Funktion mit Logging-Fähigkeiten, die andere Funktionen mit der Syntax "@my_function" umhüllt. Die Idee ist, einen generischen Wrapper zu verwenden, der in unserem Fall:
 
@@ -40,18 +41,19 @@ Wir fügen "@my_logger" &"@my_timer" zu jeder Funktion hinzu, die wir protokolli
 
 ![grafik](https://user-images.githubusercontent.com/92585239/188465413-c9e80246-19c1-42c5-9f36-c59313b86258.png)
 
-**4. Logistische Regression**
+**5. Logistische Regression**
 * Aufteilen der Daten in Trainings- und Testdaten
 * Import der LogisticRegression von sklearn.linear_model und accuracy_score von sklearn.metrics
 * Fitte das verwendete Modell + erstelle die daraufolgende Vorhersage  mithilfe des Testsets. Dabei werden die Funktionen fit() und predict() mit "@my_logger" & "@my_timer" dekoriert. 
 
 ![grafik](https://user-images.githubusercontent.com/92585239/188466267-104bd7ff-8143-440b-8470-c8b1fcb4699b.png)
 
-**5. Output/Auswertung des Modells**
+**6. Output/Auswertung des Modells**
 
 ![grafik](https://user-images.githubusercontent.com/92585239/188466514-64e5a63c-527c-4757-b00d-0feeb96acfa2.png)
 
-**6. Logistische Regression UnitTest**
+**7. Logistische Regression UnitTest**
+
 Zwei Testfälle werden implementiert: 
 * Testfall 1: Prüfung ob der Vorhersagewert predict() es Modells korrekt funktioniert. Für Testdall 1 stehen Testdaten zur Verfügung: "Accurancy Score_Test_Data.txt". Der Test ist erfolgreich
 * Testfall 2: Prüfung der Laufzeit der Trainingsfunktion fit(). Die Laufzeit der Trainingsfunktion überschreitet während der Testfallausführung den Grenwert von 120% der representativen Laufzeit nicht. 
